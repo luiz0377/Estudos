@@ -22,4 +22,4 @@ function Ordenar(array $vetor)
 
 $a = array(1, 2, 5, 6, 10, 6);
 
-echo "<br /> buscaSequencial return: "; var_dump (Ordenar($a));
+echo "<br /> BuscaSequencial return: "; var_dump (Ordenar($a));
