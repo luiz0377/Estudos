@@ -10,6 +10,7 @@ namespace Example;
 class User
 {
     protected $name;
+
     protected $lastName;
 
     public function __construct($name, $lastName)
