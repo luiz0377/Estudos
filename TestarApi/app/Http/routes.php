@@ -16,8 +16,8 @@ Route::get('/', function () {
 });
 
 Route::group(['middleware' => ['cors']], function () {
-    Route::get('api/assertiva/{cpf}','TestController@assertiva');
-    Route::get('api/serasa/{cpf}'   ,'   TestController@serasa');
+    Route::get('api/assertiva/{cpf}',   'TestController@assertiva');
+    Route::get('api/serasa/{cpf}'   ,   'TestController@serasa');
 });
 
 

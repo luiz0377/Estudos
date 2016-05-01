@@ -20,8 +20,7 @@ class TestController extends Controller
         $result = false;
 
         if ($cpf) {
-
-            $result = new \Stdclass();
+            /*$result = new \Stdclass();
             $result->cpf  = "101.808.704-40";
             $result->nome = "Luiz Henrique Soares";
             $result->dataNascimento = '24';
@@ -41,7 +40,13 @@ class TestController extends Controller
             $result->email2 = "luizhenrique0377@outlook.com";
             $result->profissao = 'Analista de Sistemas';
             $result->empresa = "PSV Turismo";
-            $result->renda = "Até 2SM";
+            $result->renda = "Até 2SM";*/
+
+            $result = new \Stdclass();
+            $result->cpf = "101.808.704-40";
+            $result->name = "   luiz henrique soares";
+            $result->idade = '22';
+            $result->profissao = 'Analista de Sistemas';
         }
 
         return response()->json($result);
@@ -58,14 +63,14 @@ class TestController extends Controller
         $result = false;
 
         if ($cpf) {
-            $data = new \Stdclass();
-            $data->cpf = "101.808.704-40";
-            $data->name = "   luiz henrique soares";
-            $data->idade = '22';
-            $data->profissao = 'Analista de Sistemas';
+            $result = new \Stdclass();
+            $result->cpf = "101.808.704-40";
+            $result->name = "   luiz henrique soares";
+            $result->idade = '22';
+            $result->profissao = 'Analista de Sistemas';
         }
 
-        return response()->json($data);
+        return response()->json($result);
     }
 
 }
